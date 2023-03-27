@@ -24,6 +24,6 @@ public class HelloFactoryTest {
     @GetMapping("/fruit/{fruitName}")
     public void getFruitFactory(@PathVariable String fruitName){
         FruitService fruitService = factoryTest.createFruitService(fruitName);
-        System.out.println("fruitService name is = " + fruitService.getServiceName());
+        System.out.println("FruitService name is = " + fruitService.getServiceName());
     }
 }
