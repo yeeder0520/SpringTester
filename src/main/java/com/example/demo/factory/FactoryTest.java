@@ -28,7 +28,7 @@ public class FactoryTest {
     public FruitService createFruitService(String fruitName) {
         FruitService fruitService = fruitServiceMap.get(fruitName);
         if (fruitService == null) {
-            throw new IllegalArgumentException("Unsupported FruitService: " + fruitName);
+            throw new IllegalArgumentException("沒這個水果工廠 : " + fruitName);
         }
         return fruitService;
     }
